@@ -42,36 +42,6 @@ On the {{site.data.keyword.Bluemix_notm}}, to configure cluster-level logging fo
 
 In this tutorial, you will learn how to configure cluster-level logging.
 
-## Before you begin
-{: #prereqs}
-
-Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:**  You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
-
-Read about IBM Log Analysis with LogDNA. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
-
-Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
-
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
-
-| Resource                             | Scope of the access policy | Role    | Region    | Information                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
-| IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
-| Kubernetes cluster instance          |  Resource                 | Editor  | us-south  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
-
-For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
-
-Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
-
-Install the Kubernetes CLI plug-in. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
-
-
-## Step1: Provision an IBM Log Analysis with LogDNA instance
-![LogDNA component overview in {{site.data.keyword.Bluemix_notm}}](../images/kube.png "LogDNA component overview in {{site.data.keyword.Bluemix_notm}}")
-
-For more information about IBM Log Analysis with LogDNA, see [About](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
-
 
 ## Objectives
 {: #objectives}
